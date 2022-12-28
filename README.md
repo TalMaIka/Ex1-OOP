@@ -9,8 +9,18 @@ This project main subject is to recreate and extend the capabillities of the kno
 
  ## Project Description
  
- ![Screenshot](https://serving.photos.photobox.com/42202007e51b950bbd8057d26148ad5295045327922b125db63ac9fa66ab4bcd4509ad20.jpg)     
+ ![Screenshot](https://i.postimg.cc/nLRt8chD/Main-project-diagram.png)     
  The image above breaks down the project by classes interfaces and methods.
+ 
+ ### ConcreteMember
+ This class resembles the 'Observerable' under the 'Observer' Design Pattern, ConcreteMembers gets updates and holds a shallow copy of the same Database there 'GroupAdmin' object holds.
+ 
+ ### GroupAdmin
+ This class resembles the 'Observers' under the 'Observer' Design Pattern, GroupAdmin notifies every member that registered to the group that there was an 
+ update/change been made on the 'UndoableStringBuilder' object it holds.
+ 
+ 
+ ### Further explanation + how to run our project.
  
  As shown 'GroupAdmin' implements 'Sender' and 'ConcreteMember' implements 'Member' Interface.
  'GroupAdmin' resembles the 'Observer' who sends the updates and 'ConcreteMember' resembles the 'Observerable' who gets updates.
@@ -38,8 +48,21 @@ This project main subject is to recreate and extend the capabillities of the kno
     
  That will make sure that the members registered to the channel will be notified in every update made.
 
+### Time complexity
+GroupAdmin methods ->
+  ```
+  register() -> O(1)
+  unregister() -> 0(n)
+  
+  
+  
+  ```
 
 
+### Testing
+Using JUnit testing we made sure that every method works as intended.   
+There are the JUnit files:
+![Screenshot](https://i.postimg.cc/vB4wGF4S/Tests.png)
 
 ## Version History
 
