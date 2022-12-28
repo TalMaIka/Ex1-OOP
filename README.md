@@ -19,23 +19,24 @@ This project main subject is to recreate and extend the capabillities of the kno
  * 'GroupAdmin' -> as Channel Owner      
  * 'ConcreteMember' -> As User who subscribed to the channel.
  
- * First we create a "Channel" named ABC.
-   * GroupAdmin ABC = new GroupAdmin();
+ * First we create a "Channel" named ABC.      
+   ```GroupAdmin ABC = new GroupAdmin();```
    
- *  We'll create a "Member" named FirstUser.
-   * ConcreteMember FirstUser = new ConcreteMember("User");
+ *  We'll create a "Member" named FirstUser.     
+ ```ConcreteMember FirstUser = new ConcreteMember("User");```  
    
- *  Than We'll make the registration proccess to the channel.
-   * ABC.register(FirstUser);
+   
+ *  Than We'll make the registration proccess to the channel.    
+ ```ABC.register(FirstUser);```
 
  * The procces will make sure that every change/update made by the channel owner will get to the registered members.
-  For example we will append a string by ABC.append("First Video") (resembles to new video beeing uploaded to the channel)
-   * ABC.append("First Video");
+   For example we will append a string by ABC.append("First Video") (resembles to new video beeing uploaded to the channel)   
+ ```ABC.append("First Video");```
    
-  Then the method execured after every change made notifyMembers()
-   * for (Member m:MemberList) {
-            m.update(USB);
-        }
+ * Then the method execured after every change made notifyMembers()   
+    ```for (Member m:MemberList) {m.update(USB);}```    
+    
+ That will make sure that the members registered to the channel will be notified in every update made.
 
 
 
