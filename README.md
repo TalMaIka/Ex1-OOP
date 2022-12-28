@@ -4,8 +4,11 @@
 This project main subject is to recreate and extend the capabillities of the known Java 'StringBuilder' by writing our own 'UndoableStringBuilder' that will be capable of rolling back changes by adding the method undo() with consideration of best complexity possiable to make that happen.
 
 ### Authors
-    * [Tal Malka](https://github.com/TalMaIka)
-    * [Yann Chich](https://github.com/yannchich)
+* [Tal Malka](https://github.com/TalMaIka)    
+* [Yann Chich](https://github.com/yannchich)
+
+ ## Project Description
+ ![Screenshot](https://serving.photos.photobox.com/42202007e51b950bbd8057d26148ad5295045327922b125db63ac9fa66ab4bcd4509ad20.jpg) 
 
 
 
