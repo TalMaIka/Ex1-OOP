@@ -9,7 +9,7 @@ This project main subject is to recreate and extend the capabillities of the kno
 
  ## Project Description
  
- ![Screenshot](https://serving.photos.photobox.com/42202007e51b950bbd8057d26148ad5295045327922b125db63ac9fa66ab4bcd4509ad20.jpg) 
+ ![Screenshot](https://serving.photos.photobox.com/42202007e51b950bbd8057d26148ad5295045327922b125db63ac9fa66ab4bcd4509ad20.jpg)     
  The image above breaks down the project by classes interfaces and methods.
  
  As shown 'GroupAdmin' implements 'Sender' and 'ConcreteMember' implements 'Member' Interface.
