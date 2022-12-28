@@ -53,10 +53,16 @@ GroupAdmin methods ->
   ```
   register() -> O(1)
   unregister() -> 0(n)
+  undo() -> O(1)
+  notifyMembers() -> O(m) -> m - MemberList size.
   
-  
-  
+  append(), delete(), insert() -> Are Java StringBuilder built-in method.
+  https://docs.oracle.com/javase/8/docs/api/java/lang/StringBuilder.html
   ```
+  
+  Concretemember method ->    
+  
+  ```update() -> O(1)```
 
 
 ### Testing
