@@ -13,7 +13,12 @@ package observer;
  */
 public class ConcreteMember implements Member{
         private String name;
-        UndoableStringBuilder MemberUSB;
+
+    public UndoableStringBuilder getMemberUSB() {
+        return MemberUSB;
+    }
+
+    private UndoableStringBuilder MemberUSB;
     /**
      * Two constructors for every 'ConcreteMember'.
      */

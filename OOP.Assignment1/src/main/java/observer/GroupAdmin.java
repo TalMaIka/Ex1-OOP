@@ -14,8 +14,14 @@ public class GroupAdmin implements Sender{
      * The two main object that integrated in every 'GroupAdmin' created and constructor.
      */
     private ArrayList<Member> MemberList;
-    int size;
-    UndoableStringBuilder USB;
+    public int size;
+
+    public UndoableStringBuilder getUSB() {
+        return USB;
+    }
+
+    private UndoableStringBuilder USB;
+
     public GroupAdmin(){
        this.MemberList = new ArrayList<>();
        this.USB = new UndoableStringBuilder();
